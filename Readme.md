@@ -1,4 +1,4 @@
-Event Solidity smart contract provides a decentralized solution for managing events. It allows organizers to create events and attendees to purchase, hold, and transfer tickets securely on the Ethereum blockchain.
+Event Solidity smart contract provides a decentralized solution for managing events. It allows organizers to create events and attendees to purchase, hold, and transfer tickets securely.
 
 Features:
 
