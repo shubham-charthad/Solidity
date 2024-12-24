@@ -20,7 +20,7 @@ contract TokenWallet {
     
     constructor() {
         owner = msg.sender;
-        balances[msg.sender] = 1000; // Assign initial tokens to contract deployer
+        balances[msg.sender] = 1000;
     }
 
     modifier Owner(){
