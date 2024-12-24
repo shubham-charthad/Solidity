@@ -1,6 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.18;
 
+/* Event Solidity smart contract provides a decentralized solution for managing events. 
+It allows organizers to create events and attendees to purchase, hold, and transfer tickets securely.
+*/
+
 contract EventContract{
     struct Event{
         address organizer;
