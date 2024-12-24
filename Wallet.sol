@@ -1,7 +1,12 @@
-// Solidity-based Token Wallet for Local Blockchain
 
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.18;
+
+/*
+The TokenWallet smart contract provides a simple token management system. 
+It enables users to send tokens to other addresses, and the contract owner can add tokens to their balance. 
+The contract ensures secure transactions and balance management while maintaining transparency through events.
+*/
 
 contract TokenWallet {
     mapping(address => uint256) private balances;
@@ -12,7 +17,7 @@ contract TokenWallet {
     event TokensSent(address indexed from, address indexed to, uint256 amount);
     event TokensReceived(address indexed from, uint256 amount);
 
-    // Initialize the wallet with an initial balance
+    
     constructor() {
         owner = msg.sender;
         balances[msg.sender] = 1000; // Assign initial tokens to contract deployer
@@ -36,7 +41,7 @@ contract TokenWallet {
         emit TokensSent(msg.sender, to, amount);
     }
 
-    // Function to receive tokens (add to Owner's balance)
+    // Function to receive tokens 
     function receiveTokens(uint256 amount) Owner public {
         require(amount > 0, "Amount must be greater than zero");
 
